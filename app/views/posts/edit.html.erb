@@ -1,5 +1,5 @@
 <%= form_for(@post) do |f| %>
-  <label><%= @post.last_updated %></label><br>
+  <label><%= last_updated @post %></label><br>
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
 
