@@ -1,4 +1,5 @@
 <%= form_for(@post) do |f| %>
+  <label><%= @post.updated_at.strftime("Last updated %A, %b %e, at %l:%M %p") %></label><br>
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
 
